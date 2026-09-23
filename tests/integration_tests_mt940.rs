@@ -7,7 +7,7 @@ use std::path::PathBuf;
 
 use mt940::sanitizers::sanitize;
 use mt940::{
-    parse_mt940, DateParseError, Message, ParseError, RequiredTagNotFoundError, UnexpectedTagError,
+    DateParseError, Message, ParseError, RequiredTagNotFoundError, UnexpectedTagError, parse_mt940,
 };
 
 /// Parse a bunch of MT940 statements that should just work even without sanitation.

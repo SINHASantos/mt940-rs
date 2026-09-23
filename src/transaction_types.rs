@@ -74,7 +74,9 @@ impl fmt::Display for TransactionTypeIdentificationCode {
             TransactionTypeIdentificationCode::BNK => "Securities Related Item – Bank fees",
             TransactionTypeIdentificationCode::BOE => "Bill of exchange",
             TransactionTypeIdentificationCode::BRF => "Brokerage fee",
-            TransactionTypeIdentificationCode::CAR => "Securities Related Item – Corporate Actions Related (Should only be used when no specific corporate action event code is available)",
+            TransactionTypeIdentificationCode::CAR => {
+                "Securities Related Item – Corporate Actions Related (Should only be used when no specific corporate action event code is available)"
+            }
             TransactionTypeIdentificationCode::CAS => "Securities Related Item – Cash in Lieu",
             TransactionTypeIdentificationCode::CHG => "Charges and other expenses",
             TransactionTypeIdentificationCode::CHK => "Cheques",
@@ -85,50 +87,86 @@ impl fmt::Display for TransactionTypeIdentificationCode {
             TransactionTypeIdentificationCode::CMS => "Cash management item – Sweeping",
             TransactionTypeIdentificationCode::CMT => "Cash management item -Topping",
             TransactionTypeIdentificationCode::CMZ => "Cash management item – Zero balancing",
-            TransactionTypeIdentificationCode::COL => "Collections (used when entering a principal amount)",
+            TransactionTypeIdentificationCode::COL => {
+                "Collections (used when entering a principal amount)"
+            }
             TransactionTypeIdentificationCode::COM => "Commission",
             TransactionTypeIdentificationCode::CPN => "Securities Related Item – Coupon payments",
-            TransactionTypeIdentificationCode::DCR => "Documentary credit (used when entering a principal amount)",
+            TransactionTypeIdentificationCode::DCR => {
+                "Documentary credit (used when entering a principal amount)"
+            }
             TransactionTypeIdentificationCode::DDT => "Direct Debit Item",
-            TransactionTypeIdentificationCode::DIS => "Securities Related Item – Gains disbursement",
+            TransactionTypeIdentificationCode::DIS => {
+                "Securities Related Item – Gains disbursement"
+            }
             TransactionTypeIdentificationCode::DIV => "Securities Related Item – Dividends",
             TransactionTypeIdentificationCode::EQA => "Equivalent amount",
-            TransactionTypeIdentificationCode::EXT => "Securities Related Item – External transfer for own account",
+            TransactionTypeIdentificationCode::EXT => {
+                "Securities Related Item – External transfer for own account"
+            }
             TransactionTypeIdentificationCode::FEX => "Foreign exchange",
             TransactionTypeIdentificationCode::INT => "Interest",
             TransactionTypeIdentificationCode::LBX => "Lock box",
             TransactionTypeIdentificationCode::LDP => "Loan deposit",
-            TransactionTypeIdentificationCode::MAR => "Securities Related Item – Margin payments/Receipts",
+            TransactionTypeIdentificationCode::MAR => {
+                "Securities Related Item – Margin payments/Receipts"
+            }
             TransactionTypeIdentificationCode::MAT => "Securities Related Item – Maturity",
             TransactionTypeIdentificationCode::MGT => "Securities Related Item – Management fees",
             TransactionTypeIdentificationCode::MSC => "Miscellaneous",
-            TransactionTypeIdentificationCode::NWI => "Securities Related Item – New issues distribution",
+            TransactionTypeIdentificationCode::NWI => {
+                "Securities Related Item – New issues distribution"
+            }
             TransactionTypeIdentificationCode::ODC => "Overdraft charge",
             TransactionTypeIdentificationCode::OPT => "Securities Related Item – Options",
-            TransactionTypeIdentificationCode::PCH => "Securities Related Item – Purchase (including STIF and Time deposits)",
+            TransactionTypeIdentificationCode::PCH => {
+                "Securities Related Item – Purchase (including STIF and Time deposits)"
+            }
             TransactionTypeIdentificationCode::POP => "Securities Related Item – Pair-off proceeds",
-            TransactionTypeIdentificationCode::PRN => "Securities Related Item – Principal pay-down/pay-up",
+            TransactionTypeIdentificationCode::PRN => {
+                "Securities Related Item – Principal pay-down/pay-up"
+            }
             TransactionTypeIdentificationCode::REC => "Securities Related Item – Tax reclaim",
-            TransactionTypeIdentificationCode::RED => "Securities Related Item – Redemption/Withdrawal",
+            TransactionTypeIdentificationCode::RED => {
+                "Securities Related Item – Redemption/Withdrawal"
+            }
             TransactionTypeIdentificationCode::RIG => "Securities Related Item – Rights",
             TransactionTypeIdentificationCode::RTI => "Returned item",
-            TransactionTypeIdentificationCode::SAL => "Securities Related Item – Sale (including STIF and Time deposits)",
-            TransactionTypeIdentificationCode::SEC => "Securities (used when entering a principal amount)",
-            TransactionTypeIdentificationCode::SLE => "Securities Related Item – Securities lending related",
+            TransactionTypeIdentificationCode::SAL => {
+                "Securities Related Item – Sale (including STIF and Time deposits)"
+            }
+            TransactionTypeIdentificationCode::SEC => {
+                "Securities (used when entering a principal amount)"
+            }
+            TransactionTypeIdentificationCode::SLE => {
+                "Securities Related Item – Securities lending related"
+            }
             TransactionTypeIdentificationCode::STO => "Standing order",
             TransactionTypeIdentificationCode::STP => "Securities Related Item – Stamp duty",
             TransactionTypeIdentificationCode::SUB => "Securities Related Item – Subscription",
             TransactionTypeIdentificationCode::SWP => "Securities Related Item – SWAP payment",
-            TransactionTypeIdentificationCode::TAX => "Securities Related Item – Withholding tax payment",
+            TransactionTypeIdentificationCode::TAX => {
+                "Securities Related Item – Withholding tax payment"
+            }
             TransactionTypeIdentificationCode::TCK => "Travellers cheques",
-            TransactionTypeIdentificationCode::TCM => "Securities Related Item – Tripartite collateral management",
-            TransactionTypeIdentificationCode::TRA => "Securities Related Item – Internal transfer for own account",
+            TransactionTypeIdentificationCode::TCM => {
+                "Securities Related Item – Tripartite collateral management"
+            }
+            TransactionTypeIdentificationCode::TRA => {
+                "Securities Related Item – Internal transfer for own account"
+            }
             TransactionTypeIdentificationCode::TRF => "Transfer",
             TransactionTypeIdentificationCode::TRN => "Securities Related Item – Transaction fee",
-            TransactionTypeIdentificationCode::UWC => "Securities Related Item – Underwriting commission",
-            TransactionTypeIdentificationCode::VDA => "Value date adjustment (used with an entry made to withdraw an incorrectly dated entry – it will be followed by the correct entry with the relevant code)",
+            TransactionTypeIdentificationCode::UWC => {
+                "Securities Related Item – Underwriting commission"
+            }
+            TransactionTypeIdentificationCode::VDA => {
+                "Value date adjustment (used with an entry made to withdraw an incorrectly dated entry – it will be followed by the correct entry with the relevant code)"
+            }
             TransactionTypeIdentificationCode::WAR => "Securities Related Item – Warrant",
-            TransactionTypeIdentificationCode::NonStandard(_) => "Non-standard MT940 Transaction Type Identification Code",
+            TransactionTypeIdentificationCode::NonStandard(_) => {
+                "Non-standard MT940 Transaction Type Identification Code"
+            }
         };
         write!(f, "({self:?}, {description})")
     }

@@ -3,10 +3,10 @@ use std::str::FromStr;
 use chrono::prelude::*;
 use pest::Parser;
 
-use crate::errors::RequiredTagNotFoundError;
-use crate::utils::{date_from_mt940_date, decimal_from_mt940_amount};
 use crate::MT940Parser;
 use crate::Rule;
+use crate::errors::RequiredTagNotFoundError;
+use crate::utils::{date_from_mt940_date, decimal_from_mt940_amount};
 use crate::{
     AvailableBalance, Balance, DebitOrCredit, ExtDebitOrCredit, Field, InformationToAccountOwner,
     ParseError, StatementLine, TransactionTypeIdentificationCode,
