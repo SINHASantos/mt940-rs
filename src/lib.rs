@@ -371,7 +371,7 @@ impl Message {
                                 }
                                 // If both are plain variants, we concatenate them
                                 (
-                                    Some(InformationToAccountOwner::Plain(ref mut current_info)),
+                                    Some(InformationToAccountOwner::Plain(current_info)),
                                     InformationToAccountOwner::Plain(info),
                                 ) => {
                                     current_info.push_str(&info);
